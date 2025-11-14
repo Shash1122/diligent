@@ -1,0 +1,65 @@
+You are an expert backend engineer. Create a minimal e-commerce database project using SQLite. 
+The project must contain at least **5 separate files**:
+
+1. schema.sql  
+   - Create tables: users, products, categories, orders, order_items  
+   - Include primary keys, foreign keys, constraints  
+   - Use realistic column names (email, price, stock, timestamps, etc.)
+
+2. seed_users.sql  
+   - Insert at least 10 synthetic users  
+
+3. seed_products.sql  
+   - Insert categories and at least 15 products assigned to categories  
+
+4. seed_orders.sql  
+   - Insert at least 8 orders belonging to random users  
+
+5. seed_order_items.sql  
+   - Insert items for each order (2–5 per order) referencing products  
+
+Requirements:
+- Ensure all foreign keys align correctly.
+- Provide synthetic but realistic sample data.
+- Use lower_snake_case formatting.
+- Make sure every file is runnable independently and can be executed sequentially.
+- At the end, explain in bullet points how to run the 5 files to build the complete DB.
+
+########################################################################################################################################################################
+You are an expert automation engineer.
+Generate a complete script python that:
+
+Creates a SQLite database file named ecommerce.db.
+Executes the following SQL files in order:
+schema.sql
+seed_users.sql
+seed_products.sql
+seed_orders.sql
+seed_order_items.sql
+Validates the creation:
+Print a list of tables
+Print row counts for each table
+Requirements:
+
+Provide a Python(version using sqlite3).
+Ensure the script detects failure points and prints clear errors.
+The final output should be a fully populated SQLite database.
+#########################################################################################################################################################################
+You are a SQL expert.  
+Generate a set of **at least 7** SQL queries that join multiple tables from the e-commerce schema.
+
+Include queries for:
+
+1. List all orders with user details and total price.
+2. List products and their categories.
+3. Find top 5 users by total spending.
+4. Find the best-selling products (based on quantity).
+5. Show order items with product, category, and user info.
+6. Generate monthly revenue.
+7. Show users who never placed an order.
+
+Requirements:
+- Use clear aliases.
+- Format queries in readable SQL.
+- Provide a short explanation under each query.
+- Ensure all queries work with the previously defined schema.
